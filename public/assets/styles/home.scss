@@ -1,0 +1,24 @@
+.top-home-section {
+  background: url('https://i.warosu.org/data/tg/img/0268/11/1377397622728.gif');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.downwards-arrow-container {
+  // border: 1px solid black;
+  // margin-top: 100px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-around;
+
+  i {
+    font-size: 35px;
+    color: white;
+  }
+}

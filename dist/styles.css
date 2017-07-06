@@ -1,0 +1,93 @@
+.top-home-section {
+  background: url("https://i.warosu.org/data/tg/img/0268/11/1377397622728.gif");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; }
+
+.downwards-arrow-container {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around; }
+  .downwards-arrow-container i {
+    font-size: 35px;
+    color: white; }
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background: #1B1E1F; }
+
+.main-header {
+  width: 100%;
+  height: 60px;
+  background: #383C3E; }
+  .main-header .logo-container {
+    width: 80px;
+    height: 15px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px; }
+    .main-header .logo-container .logo-image {
+      width: 100%;
+      height: 100%; }
+
+.main-section {
+  display: flex;
+  justify-content: space-around; }
+
+.scroll-section {
+  height: 600px;
+  width: 100%;
+  background: #202426; }
+
+.inner-section-container {
+  width: 75%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
+
+.section-text-container {
+  width: 100%;
+  height: auto;
+  margin-top: 200px;
+  margin-bottom: 30px; }
+
+.section-text-large {
+  padding: 0 100px 0 100px;
+  font-size: 30px;
+  font-family: 'Raleway';
+  font-weight: lighter;
+  color: white; }
+
+.section-center-button-container {
+  width: 100%;
+  height: 45px;
+  margin-bottom: 120px; }
+
+.section-center-button {
+  border: 1px solid white;
+  width: 200px;
+  height: 40px;
+  margin: 0 10px 0 10px;
+  background: transparent; }
+  .section-center-button p {
+    font-family: 'Raleway';
+    font-size: 18px;
+    color: white; }
+
+.section-center-button:hover {
+  background: rgba(56, 60, 62, 0.8);
+  transition: all 200ms ease; }
+
+/*# sourceMappingURL=maps/styles.css.map */
