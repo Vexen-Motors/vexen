@@ -38,7 +38,7 @@ gulp.task('copy-images', function(){
 })
 
 gulp.task('get-json', function(){
-  gulp.src('./public.json')
+  gulp.src('./public/**.json')
   .pipe(gulp.dest('dist'))
 })
 

@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 .top-home-section {
-  background: url("https://i.warosu.org/data/tg/img/0268/11/1377397622728.gif");
+  background: url("./assets/images/teslawallpaper.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,16 +9,47 @@
   width: 100%;
   height: 100vh; }
 
-.downwards-arrow-container {
+.home-info-section {
+  height: 100vh;
   width: 100%;
-  height: 30px;
-  display: flex;
-  justify-content: space-around; }
-  .downwards-arrow-container i {
-    font-size: 35px;
-    color: white; }
+  background: #1B1E1F; }
+  .home-info-section .inner-section-container {
+    width: 90%;
+    height: 450px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between; }
 
-@import url("https://fonts.googleapis.com/css?family=Raleway");
+.home-carousel-container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap; }
+
+.carousel-item {
+  height: 100%;
+  width: 20%; }
+  .carousel-item img {
+    width: 100%;
+    height: 100%; }
+
+.info-left {
+  float: left;
+  height: 100%;
+  width: 48%;
+  text-align: left; }
+
+.info-right {
+  float: right;
+  height: 100%;
+  width: 48%;
+  text-align: left; }
+  .info-right .section-text-medium {
+    margin-top: 100px; }
+
+@import url("https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
 * {
   margin: 0;
   padding: 0; }
@@ -29,26 +62,26 @@ body {
 
 .main-header {
   width: 100%;
-  height: 60px;
-  background: #383C3E; }
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  position: fixed; }
   .main-header .logo-container {
     width: 80px;
     height: 15px;
     float: left;
-    margin-left: 30px;
-    margin-top: 20px; }
+    margin-left: 30px; }
     .main-header .logo-container .logo-image {
       width: 100%;
       height: 100%; }
 
+.main-header:hover {
+  background: #202426;
+  transition: all 1s ease; }
+
 .main-section {
   display: flex;
   justify-content: space-around; }
-
-.scroll-section {
-  height: 600px;
-  width: 100%;
-  background: #202426; }
 
 .inner-section-container {
   width: 75%;
@@ -64,11 +97,23 @@ body {
   margin-bottom: 30px; }
 
 .section-text-large {
-  padding: 0 100px 0 100px;
+  padding: 0 70px 0 70px;
   font-size: 30px;
-  font-family: 'Raleway';
-  font-weight: lighter;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
   color: white; }
+
+.section-text-medium {
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  margin-bottom: 20px; }
+
+.section-text-small {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  margin-bottom: 90px; }
 
 .section-center-button-container {
   width: 100%;
@@ -89,5 +134,15 @@ body {
 .section-center-button:hover {
   background: rgba(56, 60, 62, 0.8);
   transition: all 200ms ease; }
+
+.downwards-arrow-container {
+  margin-top: 100px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around; }
+  .downwards-arrow-container i {
+    font-size: 35px;
+    color: white; }
 
 /*# sourceMappingURL=maps/styles.css.map */

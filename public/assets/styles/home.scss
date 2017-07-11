@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+$main-color: #1B1E1F;
+$base-color: #202426;
+$header-color: #383C3E;
+
 .top-home-section {
-  background: url('https://i.warosu.org/data/tg/img/0268/11/1377397622728.gif');
+  background: url('./assets/images/teslawallpaper.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,17 +15,62 @@
   height: 100vh;
 }
 
-.downwards-arrow-container {
-  // border: 1px solid black;
-  // margin-top: 100px;
-  width: 100%;
-  height: 30px;
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: space-around;
 
-  i {
-    font-size: 35px;
-    color: white;
+.home-info-section {
+  height: 100vh;
+  width: 100%;
+  background: $main-color;
+  // border: 1px solid white;
+
+  .inner-section-container {
+    width: 90%;
+    height: 450px;
+    // border: 1px solid blue;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.home-carousel-container {
+  // margin-top: 7vh;
+  width: 100%;
+  height: 150px;
+  // border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 20%;
+  // border: 1px solid white;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-left {
+  float: left;
+  height: 100%;
+  width: 48%;
+  // border: 1px solid red;
+  text-align: left;
+}
+
+.info-right {
+  float: right;
+  height: 100%;
+  width: 48%;
+  // border: 1px solid red;
+  text-align: left;
+  // display: flex;
+  // align-items: center;
+
+  .section-text-medium {
+    margin-top: 100px;
   }
 }

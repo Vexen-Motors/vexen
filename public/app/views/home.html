@@ -27,8 +27,43 @@
 
 </section>
 
-<section class='scroll-section'>
+<section class='home-info-section'>
+
+  <div class='home-carousel-container'>
+
+    <div class='carousel-item' ng-repeat='data in carouselImages | limitTo: 5'>
+
+      <img src='{{data.image}}' />
+
+    </div>
+
+  </div>
+
+  <div class='inner-section-container'>
+
+    <div class='info-left'>
+
+      <p class='section-text-medium'>Why Vexen Motors?</p>
+
+      <p class='section-text-small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      <p class='section-text-medium'>What does 'carbon negative' mean?</p>
+
+      <p class='section-text-small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+
+    <div class='info-right'>
+
+      <p class='section-text-medium'>Something should go here...</p>
+
+      <p class='section-text-small'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    </div>
+
+  </div>
 
 
+  </div>
 
 </section>
