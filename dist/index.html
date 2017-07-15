@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
     <link href='./styles.css' rel='stylesheet' />
   </head>
   <body ng-controller='mainCtrl'>
@@ -16,12 +16,71 @@
 
   </div>
 
+  <div class='navbar-container'>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>About</p></a>
+
+    </div>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>CNV</p></a>
+
+    </div>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>Media</p></a>
+
+    </div>
+
+  </div>
+
+  <div class='blog-link-container'>
+
+    <a><p class='blog-link'>Blog</p></a>
+
+  </div>
+
+  <div class='navbar-container-2' ng-if='mobileMenu'>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>About</p></a>
+
+    </div>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>CNV</p></a>
+
+    </div>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>Media</p></a>
+
+    </div>
+
+    <div class='link-container'>
+
+      <a uisref=''><p class='navbar-link'>Blog</p></a>
+
+    </div>
+
+  </div>
+
 </section>
+
+<div class='mobile-menu-button' ng-click='mobileMenu = !mobileMenu'></div>
 
     <ui-view></ui-view>
 
     <!-- {{test}} -->
 
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script src="https://use.fontawesome.com/c334b39ec1.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js'></script>

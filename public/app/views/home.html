@@ -29,9 +29,9 @@
 
 <section class='home-info-section'>
 
-  <div class='home-carousel-container'>
+  <div class='main-carousel home-carousel-container' data-flickity='{ "cellAlign": "left", "contain": true }'>
 
-    <div class='carousel-item' ng-repeat='data in carouselImages | limitTo: 5'>
+    <div class='carousel-cell carousel-item' ng-repeat='data in carouselImages | limitTo: 5'>
 
       <img src='{{data.image}}' />
 

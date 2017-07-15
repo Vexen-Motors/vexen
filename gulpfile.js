@@ -55,7 +55,7 @@ gulp.task('views', function() {
 });
 
 gulp.task('watch', function() {
-    return gulp.watch(['./index.html','./partials/*.html', './public/assets/styles/*.*', './public/app/**/*.js', './public/app/views/*.html', '.public/assets/images/**/*.*', './*.json'], ['build']);
+    return gulp.watch(['./public/index.html','./partials/*.html', './public/assets/styles/*.*', './public/app/**/*.js', './public/app/views/*.html', '.public/assets/images/**/*.*', './*.json'], ['build']);
 });
 
 gulp.task('default', ['build', 'watch'])

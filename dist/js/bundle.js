@@ -13,6 +13,8 @@ angular.module('vexen', ['ui.router']).config(function ($stateProvider, $urlRout
 
 angular.module('vexen').controller('mainCtrl', function ($scope, mainService) {
 
+  $scope.mobileMenu = false;
+
   $scope.test = 'working';
 
   $scope.carouselData = function () {

@@ -1,5 +1,7 @@
 angular.module('vexen').controller('mainCtrl', function($scope, mainService){
 
+$scope.mobileMenu = false;
+
 $scope.test = 'working'
 
 $scope.carouselData = () => {
