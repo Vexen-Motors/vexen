@@ -4,7 +4,14 @@ angular.module('vexen', ['ui.router']).config(function($stateProvider, $urlRoute
     .state('home', {
       url: '/',
       templateUrl: './views/home.html'
-    })
+    }),
+
+    $stateProvider
+      .state('about', {
+        url: '/about',
+        templateUrl: './views/about.html'
+      })
+
 
     $urlRouterProvider.otherwise('/')
 

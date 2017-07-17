@@ -18,13 +18,17 @@ body {
     background: $main-color;
 }
 
+a {
+  text-decoration: none;
+}
+
 .main-header {
   width: 100%;
   height: 7vh;
   // background: $base-color;
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
 
   .logo-container {
     width: 80px;
@@ -154,6 +158,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  padding-top: 50px;
+  background: none;
 
   @media(max-width: 1240px){
     width: 90%;
@@ -169,7 +175,7 @@ body {
   height: auto;
   // border: 1px solid black;
   margin-top: 60px;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .section-text-large {
@@ -195,6 +201,8 @@ body {
   font-family: 'Raleway', sans-serif;
   color: white;
   margin-bottom: 20px;
+  // padding: 5px;
+  // background-color: $main-color;
 }
 
 .section-text-small {
@@ -202,7 +210,9 @@ body {
   font-family: 'Raleway', sans-serif;
   color: white;
   margin-bottom: 90px;
-  // background-color: $base-color;
+  padding: 5px 5px 50px 5px;
+  background-color: $header-color;
+  // border-radius: 5px;
 }
 
 .section-center-button-container {
@@ -227,11 +237,35 @@ body {
   }
 }
 
-.section-center-button:hover {
-  background: rgba(56, 60, 62, .8);
-  // border: 1px solid rgba(56, 60, 62, .8);
-  transition: all 200ms ease;
+.reserve-button {
+  border: 1px solid black;
+
+  p{
+    color: black;
+  }
 }
+
+
+.section-center-button:hover {
+  background: rgba(0, 0, 0, .8);
+  // border: 1px solid white;
+  border: 1px solid black;
+  transition: all 200ms ease;
+
+  p {
+    color: white;
+  }
+}
+.reserve-button:hover {
+  background: white;
+  border: 1px solid white;
+  transition: all 200ms ease;
+
+  p {
+    color: black;
+  }
+}
+
 .downwards-arrow-container {
   // border: 1px solid black;
   margin-top: 100px;
@@ -260,4 +294,13 @@ body {
   @media(min-width: 600px){
     display: none;
   }
+}
+
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }

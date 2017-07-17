@@ -5,6 +5,9 @@ angular.module('vexen', ['ui.router']).config(function ($stateProvider, $urlRout
   $stateProvider.state('home', {
     url: '/',
     templateUrl: './views/home.html'
+  }), $stateProvider.state('about', {
+    url: '/about',
+    templateUrl: './views/about.html'
   });
 
   $urlRouterProvider.otherwise('/');
@@ -16,6 +19,14 @@ angular.module('vexen').controller('mainCtrl', function ($scope, mainService) {
   $scope.mobileMenu = false;
 
   $scope.test = 'working';
+
+  $scope.standardIf = true;
+
+  $scope.launchIf = false;
+
+  $scope.companyIf = false;
+
+  $scope.reserveIf = false;
 
   $scope.carouselData = function () {
     mainService.carouselData().then(function (response) {
