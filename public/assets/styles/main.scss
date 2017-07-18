@@ -29,6 +29,7 @@ a {
   display: flex;
   align-items: center;
   position: absolute;
+  z-index: 21;
 
   .logo-container {
     width: 80px;
@@ -64,6 +65,7 @@ a {
       background: black;
       align-items: none;
       display: none;
+      position: fixed;
     }
   }
 
@@ -115,7 +117,8 @@ a {
   }
 
   .navbar-link:hover {
-    color: $header-color;
+    // color: black;
+    text-decoration: underline;
   }
 }
 
@@ -141,7 +144,7 @@ a {
 
 .main-header:hover {
   background: $base-color;
-  transition: all 1s ease;
+  transition: all .5s ease;
 }
 
 .main-section {
@@ -185,7 +188,7 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: white;
-  text-stroke: 1px black; 
+  text-stroke: 1px black;
 
   @media(max-width: 600px){
 
@@ -224,12 +227,12 @@ a {
 }
 
 .section-center-button {
-  border: 1px solid white;
+  border: 1px solid black;
   // border: none;
   width: 200px;
   height: 40px;
   margin: 0 10px 20px 10px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, .8);
 
   p {
     font-family: 'Raleway';
@@ -239,7 +242,8 @@ a {
 }
 
 .reserve-button {
-  border: 1px solid black;
+  background: white;
+  border: 1px solid white;
 
   p{
     color: black;
@@ -248,22 +252,22 @@ a {
 
 
 .section-center-button:hover {
-  background: rgba(0, 0, 0, .8);
-  // border: 1px solid white;
-  border: 1px solid black;
-  transition: all 200ms ease;
-
-  p {
-    color: white;
-  }
-}
-.reserve-button:hover {
   background: white;
+  // border: 1px solid white;
   border: 1px solid white;
   transition: all 200ms ease;
 
   p {
     color: black;
+  }
+}
+.reserve-button:hover {
+  background: black;
+  border: 1px solid #FFD700;
+  transition: all 200ms ease;
+
+  p {
+    color: #FFD700;
   }
 }
 

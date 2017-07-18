@@ -279,7 +279,8 @@ a {
   background: #202426;
   display: flex;
   align-items: center;
-  position: absolute; }
+  position: absolute;
+  z-index: 21; }
   .main-header .logo-container {
     width: 80px;
     height: 15px;
@@ -307,7 +308,8 @@ a {
         height: 300px;
         background: black;
         align-items: none;
-        display: none; } }
+        display: none;
+        position: fixed; } }
   .main-header .navbar-container-2 {
     width: 400px;
     height: 100%;
@@ -341,7 +343,7 @@ a {
     font-family: 'Raleway';
     font-weight: 100; }
   .main-header .navbar-link:hover {
-    color: #383C3E; }
+    text-decoration: underline; }
 
 .blog-link-container {
   width: 80px;
@@ -361,7 +363,7 @@ a {
 
 .main-header:hover {
   background: #202426;
-  transition: all 1s ease; }
+  transition: all .5s ease; }
 
 .main-section {
   display: flex;
@@ -421,34 +423,35 @@ a {
   margin-bottom: 120px; }
 
 .section-center-button {
-  border: 1px solid white;
+  border: 1px solid black;
   width: 200px;
   height: 40px;
   margin: 0 10px 20px 10px;
-  background: transparent; }
+  background: rgba(0, 0, 0, 0.8); }
   .section-center-button p {
     font-family: 'Raleway';
     font-size: 18px;
     color: white; }
 
 .reserve-button {
-  border: 1px solid black; }
+  background: white;
+  border: 1px solid white; }
   .reserve-button p {
     color: black; }
 
 .section-center-button:hover {
-  background: rgba(0, 0, 0, 0.8);
-  border: 1px solid black;
-  transition: all 200ms ease; }
-  .section-center-button:hover p {
-    color: white; }
-
-.reserve-button:hover {
   background: white;
   border: 1px solid white;
   transition: all 200ms ease; }
-  .reserve-button:hover p {
+  .section-center-button:hover p {
     color: black; }
+
+.reserve-button:hover {
+  background: black;
+  border: 1px solid #FFD700;
+  transition: all 200ms ease; }
+  .reserve-button:hover p {
+    color: #FFD700; }
 
 .downwards-arrow-container {
   margin-top: 100px;
