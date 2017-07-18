@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 .top-about-section {
   height: 100vh;
-  background: url("./assets/images/c-10.jpg");
+  background: url("./assets/images/vexen2.JPG");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +63,7 @@
     width: 200px;
     height: 25vh;
     margin-top: -10vh;
-    background: url("./assets/images/c-4.jpg");
+    background: url("./assets/images/vexen1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@
     background: none;
     color: black; }
   .about-inner-container .info-car-image-container {
-    width: 60%;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: space-around;
@@ -118,9 +118,8 @@
       .about-inner-container .info-car-image-container {
         width: 100%; } }
     .about-inner-container .info-car-image-container .car-model-image {
-      width: 600px;
-      height: 300px;
-      margin-left: -100px; }
+      width: 100%;
+      height: 100%; }
       @media (max-width: 900px) {
         .about-inner-container .info-car-image-container .car-model-image {
           margin-left: 0;
@@ -136,7 +135,7 @@
 
 .car-and-price {
   height: 450px;
-  width: 500px black;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -172,7 +171,7 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 .top-home-section {
-  background: url("./assets/images/teslawallpaper.jpg");
+  background: url("./assets/images/vexen1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -192,9 +191,8 @@
       height: auto; } }
   .home-info-section .inner-section-container {
     width: 90%;
-    height: 450px;
+    height: 98%;
     margin: auto;
-    padding-top: 50px;
     display: flex;
     justify-content: space-between; }
 
@@ -278,6 +276,7 @@ a {
 .main-header {
   width: 100%;
   height: 7vh;
+  background: #202426;
   display: flex;
   align-items: center;
   position: absolute; }
@@ -393,7 +392,8 @@ a {
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  color: white; }
+  color: white;
+  text-stroke: 1px black; }
   @media (max-width: 600px) {
     .section-text-large {
       padding: 0; } }

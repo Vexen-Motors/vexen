@@ -6,7 +6,7 @@ $base-color: #202426;
 $header-color: #383C3E;
 
 .top-home-section {
-  background: url('./assets/images/teslawallpaper.jpg');
+  background: url('./assets/images/vexen1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,12 +31,14 @@ $header-color: #383C3E;
 
   .inner-section-container {
     width: 90%;
-    height: 450px;
+    height: 98%;
     // border: 1px solid blue;
     margin: auto;
-    padding-top: 50px;
+    // padding-top: 50px;
+    // margin-top: 1%;
     display: flex;
     justify-content: space-between;
+    // background: white;
   }
 }
 
