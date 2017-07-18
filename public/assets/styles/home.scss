@@ -6,7 +6,7 @@ $base-color: #202426;
 $header-color: #383C3E;
 
 .top-home-section {
-  background: url('./assets/images/vexen1.jpg');
+  background: url('http://i.imgur.com/bpsHjNt.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,6 +24,8 @@ $header-color: #383C3E;
   width: 100%;
   background: $main-color;
   // border: 1px solid white;
+  display: flex;
+  align-items: center;
 
   @media(max-width: 1000px){
     height: auto;
@@ -31,7 +33,7 @@ $header-color: #383C3E;
 
   .inner-section-container {
     width: 90%;
-    height: 98%;
+    height: 80%;
     // border: 1px solid blue;
     margin: auto;
     // padding-top: 50px;

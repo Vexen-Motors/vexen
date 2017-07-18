@@ -72,13 +72,15 @@ a {
   .navbar-container-2 {
     width: 400px;
     height: 100%;
-    margin: auto;
     // border: 1px solid white;
     text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    right: 0;
+    top: 0;
 
     @media(max-width: 600px){
       width: 200px;
@@ -188,7 +190,7 @@ a {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   color: white;
-  text-stroke: 1px black;
+  // background: rgba(0, 0, 0, .2);
 
   @media(max-width: 600px){
 
@@ -287,14 +289,15 @@ a {
 }
 
 .mobile-menu-button {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   position: fixed;
   right: 30px;
   bottom: 30px;
-  // bottom: 0;
+  border: 1px solid $base-color;
   border-radius: 50%;
   background: white;
+  z-index: 30;
 
   @media(min-width: 600px){
     display: none;
