@@ -7,7 +7,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: -200px; }
+  padding-top: -200px;
+  position: flex;
+  justify-content: space-around;
+  align-items: center; }
   .top-about-section .inner-section-container {
     margin-top: -10vh; }
     @media (max-width: 600px) {
@@ -91,13 +94,13 @@
   margin-top: 2vh; }
   @media (max-width: 900px) {
     .about-inner-container {
-      height: 198vh; } }
+      height: auto;
+      padding-top: 100px; } }
   .about-inner-container .info-container {
     width: 40%;
     height: auto; }
     @media (max-width: 900px) {
       .about-inner-container .info-container {
-        margin-bottom: -200px;
         width: 75%; } }
     @media (max-width: 1050px) {
       .about-inner-container .info-container {
@@ -132,6 +135,9 @@
       @media (max-width: 500px) {
         .about-inner-container .info-car-image-container .car-model-image {
           width: 100%; } }
+      @media (min-width: 1350px) {
+        .about-inner-container .info-car-image-container .car-model-image {
+          height: 500px; } }
 
 .car-and-price {
   height: 450px;
@@ -146,6 +152,10 @@
   @media (max-width: 900px) {
     .car-and-price {
       width: 100%; } }
+  @media (min-width: 1350px) {
+    .car-and-price {
+      margin-top: -150px;
+      height: 770px; } }
 
 .pricing-container {
   width: 80%;
@@ -245,20 +255,22 @@
     .info-left {
       width: 100%;
       margin-bottom: 60px; } }
+  .info-left .home-info-hidden {
+    display: none; }
+    @media (max-width: 870px) {
+      .info-left .home-info-hidden {
+        display: inherit; } }
 
 .info-right {
   float: right;
   height: 100%;
   width: 48%;
-  text-align: left; }
+  text-align: left;
+  display: flex;
+  align-items: center; }
   @media (max-width: 870px) {
     .info-right {
-      width: 100%; } }
-  .info-right .section-text-medium {
-    margin-top: 100px; }
-    @media (max-width: 870px) {
-      .info-right .section-text-medium {
-        margin-top: 0; } }
+      display: none; } }
 
 @import url("https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
@@ -392,6 +404,9 @@ a {
   width: 100%;
   height: auto;
   margin-top: 60px; }
+  @media (min-width: 1350px) {
+    .section-text-container {
+      margin-bottom: 150px; } }
 
 .section-text-large {
   padding: 0 70px 0 70px;
@@ -411,6 +426,9 @@ a {
   font-family: 'Raleway', sans-serif;
   color: white;
   margin-bottom: 20px; }
+  @media (min-width: 1350px) {
+    .section-text-medium {
+      font-size: 30px; } }
 
 .section-text-small {
   font-size: 16px;
@@ -419,6 +437,10 @@ a {
   margin-bottom: 90px;
   padding: 5px 5px 50px 5px;
   background-color: #383C3E; }
+  @media (min-width: 1350px) {
+    .section-text-small {
+      font-size: 22px;
+      padding-bottom: 60px; } }
 
 .section-center-button-container {
   width: 100%;

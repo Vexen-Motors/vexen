@@ -181,6 +181,10 @@ a {
   // border: 1px solid black;
   margin-top: 60px;
   // margin-bottom: 30px;
+
+  @media(min-width: 1350px){
+    margin-bottom: 150px;
+  }
 }
 
 .section-text-large {
@@ -209,6 +213,10 @@ a {
   margin-bottom: 20px;
   // padding: 5px;
   // background-color: $main-color;
+
+  @media(min-width: 1350px){
+    font-size: 30px;
+  }
 }
 
 .section-text-small {
@@ -219,6 +227,11 @@ a {
   padding: 5px 5px 50px 5px;
   background-color: $header-color;
   // border-radius: 5px;
+
+  @media(min-width: 1350px){
+    font-size: 22px;
+    padding-bottom: 60px;
+  }
 }
 
 .section-center-button-container {
