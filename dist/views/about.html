@@ -10,14 +10,11 @@
 
     <div class='section-center-button-container'>
 
-      <button class='section-center-button' ng-click='standardIf = true; launchIf = false; companyIf = false; reserveIf = false'><p>Standard Edition</p></button>
+      <button class='section-center-button' ng-click='contactIf = true; companyIf = false; smIf = false;'><p>Contact Us</p></button>
 
-      <button class='section-center-button' ng-click='launchIf = true; standardIf = false; companyIf = false; reserveIf = false'><p>Launch Edition</p></button>
+      <button ng-controller='scrollCtrl' class='section-center-button' ng-click='gotoBottom()'><p>Company</p></button>
 
-      <button class='section-center-button' ng-click='companyIf = true; standardIf = false; launchIf = false; reserveIf = false'><p>Company</p></button>
-
-
-      <button class='reserve-button section-center-button' ng-click='reserveIf = true; standardIf = false; launchIf = false; companyIf = false'><p>Reserve</p></button>
+      <!-- <button class='section-center-button' ng-click='contactIf = false; companyIf = false; smIf = true;'><p>Social Media</p></button> -->
 
     </div>
 
@@ -29,9 +26,9 @@
 
 
 
-<section class='about-info-section'  ng-if='standardIf'>
+<section class='about-info-section' ng-if='contactIf'>
 
-  <div class='break-div-container'>
+  <div ng-controller='scrollCtrl' id='bottom' class='break-div-container'>
 
     <div class='break-div'>
 
@@ -43,129 +40,18 @@
 
   <div class='about-inner-container'>
 
-    <div class='info-container'>
+    <div class='form-container'>
 
-      <div class='section-text-container'>
-
-        <p class='section-text-medium'>Standard model</p>
-
-        <p class='section-text-small'>The Lucid Air will have a starting price of $52,500*, with standard features and options that make it competitive with high-end benchmarks.</p>
-
-      </div>
-
-      <div class='section-text-container'>
-
-        <p class='section-text-medium'>Standard model</p>
-
-        <p class='section-text-small' style='margin-bottom: 0'>The Lucid Air will have a starting price of $52,500*, with standard features and options that make it competitive with high-end benchmarks.</p>
-
-      </div>
-
-    </div>
-
-    <div class='car-and-price'>
-
-    <div class='info-car-image-container'>
-
-      <img class='car-model-image' src='http://i.imgur.com/bpsHjNt.jpg' />
-
-    </div>
-
-    <div class='pricing-container'>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
-
-      </div>
-
-      <div class='pricing-block pricing-block2'>
-
-        <p class='section-text-medium'>Middle</p>
-
-      </div>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
-
-      </div>
-
-    </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-
-
-<section class='about-info-section' ng-if='launchIf'>
-
-  <div class='break-div-container'>
-
-    <div class='break-div'>
-
-      <div class='break-slant' style='transform: skewY(-20deg)'></div>
-
-    </div>
-
-  </div>
-
-  <div class='about-inner-container'>
-
-    <div class='info-container'>
-
-      <div class='section-text-container'>
-
-        <p class='section-text-medium'>Standard model</p>
-
-        <p class='section-text-small'>The Lucid Air will have a starting price of $52,500*, with standard features and options that make it competitive with high-end benchmarks.</p>
-
-      </div>
-
-      <div class='section-text-container'>
-
-        <p class='section-text-medium'>Standard model</p>
-
-        <p class='section-text-small' style='margin-bottom: 0'>The Lucid Air will have a starting price of $52,500*, with standard features and options that make it competitive with high-end benchmarks.</p>
-
-      </div>
-
-    </div>
-
-    <div class='car-and-price'>
-
-    <div class='info-car-image-container'>
-
-      <img class='car-model-image' src='http://i.imgur.com/l4oZudc.jpg' />
-
-    </div>
-
-    <div class='pricing-container'>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
-
-      </div>
-
-      <div class='pricing-block pricing-block2'>
-
-        <p class='section-text-medium'>Middle</p>
-
-      </div>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
-
-      </div>
-
-    </div>
+        <form action="mailto:josh.oven.u@gmail.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
 
     </div>
 
@@ -193,55 +79,34 @@
 
   <div class='about-inner-container'>
 
+    <div class='company-info-logo-container'>
+
+    <div class='logo-container'>
+
+      <img src='http://i.imgur.com/DQUYKGi.png' />
+
+    </div>
+
+    </div>
+
     <div class='info-container'>
 
       <div class='section-text-container'>
 
-        <p class='section-text-medium'>Standard model</p>
+        <p class='section-text-medium'>Our Mission</p>
 
-        <p class='section-text-small'>The Lucid Air will have a starting price of $52,500*, with standard features and options that make it competitive with high-end benchmarks.</p>
+        <p class='section-text-small'>Our mission is to dramatically impact the efforts of reversing climate change and we realize that it is impossible to pursue this goal by simply reducing emissions. It is crucial that we implement means to effectively remove emissions before it is too late.
+</p>
 
       </div>
 
       <div class='section-text-container'>
 
-        <p class='section-text-medium'>Standard model</p>
+        <p class='section-text-medium'>Our Vision</p>
 
-        <p class='section-text-small' style='margin-bottom: 0'>The Lucid Air will have a starting price of $52,500*, with standard features and options that make it competitive with high-end benchmarks.</p>
-
-      </div>
-
-    </div>
-
-    <div class='car-and-price'>
-
-    <div class='info-car-image-container'>
-
-      <img class='car-model-image' src='http://i.imgur.com/bpsHjNt.jpg' />
-
-    </div>
-
-    <div class='pricing-container'>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
+        <p class='section-text-small' style='margin-bottom: 0'>When you drive the Vexen CNV you will not only be reducing the amount of pollution emitted into our atmosphere, you will effectively be removing it. The world's first CNV is the first and most vital step to pursuing our vision of a Carbon Negative Era. </p>
 
       </div>
-
-      <div class='pricing-block pricing-block2'>
-
-        <p class='section-text-medium'>Middle</p>
-
-      </div>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
-
-      </div>
-
-    </div>
 
     </div>
 
@@ -251,85 +116,94 @@
 
 
 
-
-
-<section class='about-info-section' ng-if='reserveIf'>
-
-  <div class='break-div-container'>
-
-    <div class='break-div'>
-
-      <div class='break-slant' style='transform: skewY(-20deg)'></div>
-
-      <div class='break-slant' style='transform: skewY(20deg)'></div>
-
-    </div>
-
-  </div>
+<section class='about-info-section about-board-section' ng-if='companyIf'>
 
   <div class='about-inner-container'>
 
-    <div class='car-and-price'>
+    <div class='section-text-container'>
 
-    <div class='info-car-image-container'>
-
-      <img class='car-model-image' src='http://i.imgur.com/bpsHjNt.jpg' />
+      <p class='section-text-large'>Meet Our Board.</p>
 
     </div>
 
-    <div class='pricing-container'>
+    <div class='board-section'>
 
-      <div class='pricing-block'>
+      <div class='board-card'>
 
-        <p class='section-text-medium'>Price</p>
+        <div class='board-image-container'>
 
-      </div>
+          <img src='./assets/images/Kyle.JPG' />
 
-      <div class='pricing-block pricing-block2'>
+        </div>
 
-        <p class='section-text-medium'>Middle</p>
+        <div class='section-text-container'>
 
-      </div>
+          <p class='section-text-medium'>Kyle McCullough</p>
 
-      <div class='pricing-block'>
+          <p class='section-text-small'>Founder & Chief Executive Officer</p>
 
-        <p class='section-text-medium'>Price</p>
-
-      </div>
-
-    </div>
-
-    </div>
-
-    <div class='car-and-price'>
-
-    <div class='info-car-image-container'>
-
-      <img class='car-model-image' src='http://i.imgur.com/l4oZudc.jpg' />
-
-    </div>
-
-    <div class='pricing-container'>
-
-      <div class='pricing-block'>
-
-        <p class='section-text-medium'>Price</p>
+        </div>
 
       </div>
 
-      <div class='pricing-block pricing-block2'>
 
-        <p class='section-text-medium'>Middle</p>
+      <div class='board-card'>
+
+        <div class='board-image-container'>
+
+          <img src='./assets/images/Caleb.JPG' />
+
+        </div>
+
+        <div class='section-text-container'>
+
+          <p class='section-text-medium'>Caleb Grissom</p>
+
+          <p class='section-text-small'>Co-Founder & Vice President</p>
+
+        </div>
 
       </div>
 
-      <div class='pricing-block'>
 
-        <p class='section-text-medium'>Price</p>
+      <div class='board-card'>
+
+        <div class='board-image-container'>
+
+          <img src='./assets/images/Bruce.JPG' />
+
+        </div>
+
+        <div class='section-text-container'>
+
+          <p class='section-text-medium'>Bruce Dietzan</p>
+
+          <p class='section-text-small'>Chief Innovation Officer</p>
+
+        </div>
 
       </div>
 
-    </div>
+
+      <div class='board-card'>
+
+        <div class='board-image-container'>
+
+          <img src='./assets/images/Zachary.JPG' />
+
+        </div>
+
+        <div class='section-text-container'>
+
+          <p class='section-text-medium'>Zachary Sharpell</p>
+
+          <p class='section-text-small'>Cheif Technology Officer</p>
+
+        </div>
+
+      </div>
+
+      </div>
 
     </div>
 

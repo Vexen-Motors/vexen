@@ -1,0 +1,130 @@
+<section class='top-about-section main-section'>
+
+  <div class='about-inner-container inner-section-container'>
+
+    <div class='section-text-container'>
+
+      <p class='section-text-large'>Introducing Vexen Motors.</p>
+
+    </div>
+
+    <div class='section-center-button-container'  >
+
+      <button class='section-center-button' ng-click='carIf = true; cnvIf = false; reserveIf = false;'><p>The Car</p></button>
+
+      <!-- <button class='section-center-button' ng-click='launchIf = true; standardIf = false; companyIf = false; reserveIf = false'><p>Launch Edition</p></button> -->
+
+      <button class='section-center-button' ng-click='carIf = false; cnvIf = true; reserveIf = false;'><p>Carbon Negative</p></button>
+
+
+      <button class='reserve-button section-center-button' ng-click='carIf = false; cnvIf = false; reserveIf = true;'><p>Reserve Yours</p></button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section  class='about-info-section car-info-section'  ng-if='carIf'>
+
+  <div class='break-div-container'>
+
+    <div class='break-div'>
+
+      <div class='break-slant' style='transform: skewY(20deg)'></div>
+
+      <div class='break-slant' style='transform: skewY(-20deg)'></div>
+
+    </div>
+
+  </div>
+
+  <div class='about-inner-container'>
+
+    <div class='company-info-logo-container'>
+
+    <div class='logo-container'>
+
+      <img src='http://i.imgur.com/DQUYKGi.png' />
+
+    </div>
+
+    </div>
+
+    <div class='info-container'>
+
+      <div class='section-text-container'>
+
+        <p class='section-text-medium'>Standard Edition</p>
+
+        <p class='section-text-small'>If you're looking to help our envirnment while driving or riding in a autonomous (thats right, self-driving) car this is the edition for you. It'll do everything you need and more all on its own.</p>
+
+      </div>
+
+      <div class='section-text-container'>
+
+        <p class='section-text-medium'>Special Edition</p>
+
+        <p class='section-text-small' style='margin-bottom: 0'>You're looking for a clean, autonomous, world saving car. We know thats not all you're interseted in, so we're working on our Special Edition car. Drive in luxury as you enjoy your fully loaded Carbon Negative Vehicle.</p>
+
+      </div>
+
+    </div>
+
+    <div class='reserve-container'>
+
+      <button class='reserve-button section-center-button' ng-click='carIf = false; cnvIf = false; reserveIf = true;'><p>Reserve Yours</p></button>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class='cnv-section' ng-if='cnvIf'>
+
+  <div class='break-div-container'>
+
+    <div class='break-div'>
+
+      <div class='break-slant' style='transform: skewY(-20deg)'></div>
+
+      <div class='break-slant' style='transform: skewY(20deg)'></div>
+
+    </div>
+
+  </div>
+
+  <div class='inner-section-container'>
+
+    <div class='chart-container'>
+
+      <img src='http://i.imgur.com/oNXb5XU.jpg' />
+
+    </div>
+
+    <div class='info-container'>
+
+      <div class='section-text-container'>
+
+        <p class='section-text-medium'>Erase the trace</p>
+
+        <p class='section-text-small'>Leaving a carbon footprint is our planet's greatest threat. Our first generation CNV (Carbon Negative Vehicle) will have an advantage of approximately 16 metric tons of carbon dioxide over any other vehicle on the road today.
+
+      </p>
+
+      </div>
+
+      <div class='section-text-container'>
+
+        <p class='section-text-medium'>Lorem Ipsum</p>
+
+        <p class='section-text-small' style='margin-bottom: 0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -4,12 +4,14 @@ $scope.mobileMenu = false;
 
 $scope.test = 'working'
 
-$scope.standardIf = true;
+$scope.contactIf = false;
 
-$scope.launchIf = false;
+$scope.smIf = false;
 
-$scope.companyIf = false;
+$scope.companyIf = true;
 
+$scope.carIf = true;
+$scope.cnvIf = false;
 $scope.reserveIf = false;
 
 $scope.carouselData = () => {

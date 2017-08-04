@@ -17,39 +17,10 @@
       .top-about-section .inner-section-container {
         margin-top: -20vh; } }
   .top-about-section .section-text-container {
-    margin-bottom: -200px; }
-
-.about-grey-container {
-  width: 550px;
-  background: #383C3E;
-  height: 60vh;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-
-.about-inner-container {
-  margin-top: 70px;
-  height: 500px;
-  display: flex;
-  justify-content: space-around; }
-  @media (max-width: 900px) {
-    .about-inner-container {
-      height: 200vh; } }
-  .about-inner-container .section-text-container {
-    margin-top: 0; }
-  .about-inner-container .section-text-large {
-    padding: 0; }
-  .about-inner-container .about-carousel {
-    height: 220px;
-    width: 400px;
-    padding: 20px;
-    background: #202426; }
-  .about-inner-container .about-carousel-cell {
-    width: 100%;
-    height: 100%; }
-    .about-inner-container .about-carousel-cell img {
-      width: 100%;
-      height: 100%; }
+    margin-bottom: -10px; }
+    .top-about-section .section-text-container .section-text-large {
+      margin-top: 0px;
+      color: black; }
 
 .about-info-section {
   height: 100vh;
@@ -64,8 +35,8 @@
     justify-content: space-around; }
   .about-info-section .break-div {
     width: 200px;
-    height: 25vh;
-    margin-top: -10vh;
+    height: 200px;
+    margin-top: -90px;
     background: url("http://i.imgur.com/bpsHjNt.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -80,109 +51,223 @@
       transform: skewY(20deg);
       margin-top: -50px;
       background: #1B1E1F; }
-
-.about-inner-container {
-  width: 98%;
-  height: 96vh;
-  background: #F7F7F7;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  overflow: visible;
-  position: absolute;
-  margin-top: 2vh; }
-  @media (max-width: 900px) {
-    .about-inner-container {
-      height: auto;
-      padding-top: 100px; } }
-  .about-inner-container .info-container {
-    width: 40%;
-    height: auto; }
-    @media (max-width: 900px) {
-      .about-inner-container .info-container {
-        width: 75%; } }
-    @media (max-width: 1050px) {
-      .about-inner-container .info-container {
-        width: 50%; } }
-    @media (max-width: 600px) {
-      .about-inner-container .info-container {
-        width: 95%; } }
-  .about-inner-container .section-text-container .section-text-medium {
-    background: none;
-    color: black; }
-  .about-inner-container .info-car-image-container {
+      @media (max-width: 770px) {
+        .about-info-section .break-div .break-slant {
+          display: none; } }
+    @media (max-width: 770px) {
+      .about-info-section .break-div {
+        display: none; } }
+  .about-info-section .about-inner-container {
     width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-content: center; }
-    @media (max-width: 900px) {
-      .about-inner-container .info-car-image-container {
-        width: 100%; } }
-    .about-inner-container .info-car-image-container .car-model-image {
+    height: 98%;
+    background: white;
+    margin-top: -55px; }
+    .about-info-section .about-inner-container .company-info-logo-container {
       width: 100%;
-      height: 100%; }
-      @media (max-width: 900px) {
-        .about-inner-container .info-car-image-container .car-model-image {
-          margin-left: 0;
-          width: 500px;
-          height: 250px; } }
-      @media (max-width: 1050px) {
-        .about-inner-container .info-car-image-container .car-model-image {
-          width: 500px;
-          height: 250px; } }
-      @media (max-width: 500px) {
-        .about-inner-container .info-car-image-container .car-model-image {
-          width: 100%; } }
-      @media (min-width: 1350px) {
-        .about-inner-container .info-car-image-container .car-model-image {
-          height: 500px; } }
+      height: 180px; }
+      .about-info-section .about-inner-container .company-info-logo-container .logo-container {
+        width: 180px;
+        height: 180px;
+        float: right; }
+        @media (max-width: 770px) {
+          .about-info-section .about-inner-container .company-info-logo-container .logo-container {
+            float: none;
+            margin: auto;
+            margin-top: -10px; } }
+        .about-info-section .about-inner-container .company-info-logo-container .logo-container img {
+          width: 100%;
+          height: 100%; }
+    .about-info-section .about-inner-container .info-container {
+      width: 50%;
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      flex-wrap: wrap;
+      margin-top: -10vh; }
+      @media (max-width: 770px) {
+        .about-info-section .about-inner-container .info-container {
+          width: 90%;
+          margin-top: -5vh; } }
+      .about-info-section .about-inner-container .info-container .section-text-container {
+        width: 500px;
+        height: auto;
+        margin: auto; }
+        .about-info-section .about-inner-container .info-container .section-text-container .section-text-medium {
+          color: black; }
+        .about-info-section .about-inner-container .info-container .section-text-container .section-text-small {
+          margin: 0; }
+    .about-info-section .about-inner-container .about-image-container-right {
+      float: right;
+      width: 45%;
+      height: 300px; }
+      .about-info-section .about-inner-container .about-image-container-right img {
+        width: 100%;
+        height: 100%; }
+    .about-info-section .about-inner-container .about-image-container-left {
+      float: left;
+      width: 45%;
+      height: 300px; }
+      .about-info-section .about-inner-container .about-image-container-left img {
+        width: 100%;
+        height: 100%; }
 
-.car-and-price {
-  height: 450px;
+.about-board-section .about-inner-container {
+  height: 98%;
+  width: 100%;
+  background: #202426;
+  margin-top: 1vh; }
+  @media (max-width: 1100px) {
+    .about-board-section .about-inner-container {
+      height: 160%; } }
+  @media (max-width: 555px) {
+    .about-board-section .about-inner-container {
+      height: 300%; } }
+  .about-board-section .about-inner-container .section-text-container {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: none;
+    width: auto; }
+    .about-board-section .about-inner-container .section-text-container .section-text-large {
+      width: auto;
+      margin-left: 90px;
+      color: white;
+      background: none; }
+  .about-board-section .about-inner-container .board-section {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .about-board-section .about-inner-container .board-section .board-card {
+      width: 250px;
+      height: 100%;
+      margin-bottom: 100px; }
+      .about-board-section .about-inner-container .board-section .board-card .board-image-container {
+        height: 60%;
+        width: 100%; }
+        .about-board-section .about-inner-container .board-section .board-card .board-image-container img {
+          width: 100%;
+          height: 100%; }
+      .about-board-section .about-inner-container .board-section .board-card .section-text-container {
+        width: 100%;
+        height: 40%;
+        margin-top: 10px; }
+        .about-board-section .about-inner-container .board-section .board-card .section-text-container .section-text-medium {
+          margin-bottom: 10px; }
+
+@import url("https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+.cnv-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .cnv-section .break-div-container {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around; }
+    .cnv-section .break-div-container .break-div {
+      width: 200px;
+      height: 25vh;
+      margin-top: -10vh;
+      background: url("http://i.imgur.com/bpsHjNt.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: space-around;
+      z-index: 10; }
+      .cnv-section .break-div-container .break-div .break-slant {
+        width: 120%;
+        height: 90px;
+        transform: skewY(20deg);
+        margin-top: -50px;
+        background: #1B1E1F; }
+  .cnv-section .inner-section-container {
+    width: 100%;
+    height: auto;
+    margin-top: -9vh;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .cnv-section .inner-section-container .chart-container {
+      width: 70%;
+      height: 450px;
+      margin-top: 8%; }
+      .cnv-section .inner-section-container .chart-container img {
+        width: 100%;
+        height: 100%; }
+    .cnv-section .inner-section-container .info-container {
+      width: 90%;
+      height: 200px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      flex-wrap: wrap; }
+      .cnv-section .inner-section-container .info-container .section-text-container {
+        width: 500px;
+        height: auto;
+        margin: auto; }
+        .cnv-section .inner-section-container .info-container .section-text-container .section-text-medium {
+          color: black; }
+        .cnv-section .inner-section-container .info-container .section-text-container .section-text-small {
+          margin: 0; }
+
+.car-info-section .info-container {
   width: 50%;
+  height: 500px;
   display: flex;
+  justify-content: space-between;
+  float: left;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around; }
-  @media (max-width: 1050px) {
-    .car-and-price {
-      width: 50%; } }
-  @media (max-width: 900px) {
-    .car-and-price {
-      width: 100%; } }
-  @media (min-width: 1350px) {
-    .car-and-price {
-      margin-top: -150px;
-      height: 770px; } }
+  margin-top: -10vh; }
+  @media (max-width: 770px) {
+    .car-info-section .info-container {
+      float: none;
+      margin: auto; } }
+  .car-info-section .info-container .section-text-container {
+    width: 500px;
+    height: auto;
+    margin: auto; }
+    .car-info-section .info-container .section-text-container .section-text-medium {
+      color: black; }
+    .car-info-section .info-container .section-text-container .section-text-small {
+      margin: 0; }
 
-.pricing-container {
-  width: 80%;
-  height: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid black; }
-
-.pricing-block {
-  width: 33%;
-  height: 100%;
+.car-info-section .reserve-container {
+  width: 50%;
+  height: 500px;
   display: flex;
   align-items: center;
-  justify-content: space-around; }
-  .pricing-block .section-text-medium {
-    background-color: none;
-    color: black; }
+  justify-content: space-around;
+  float: right;
+  margin-top: -10vh; }
+  @media (max-width: 770px) {
+    .car-info-section .reserve-container {
+      width: 100%;
+      margin-top: 0;
+      height: 100px; } }
 
-.pricing-block:hover {
-  background: rgba(56, 60, 62, 0.8);
-  transition: all 200ms ease; }
+.car-info-section .reserve-button {
+  background: black;
+  border: 1px solid gold; }
+  .car-info-section .reserve-button p {
+    color: gold; }
+
+.car-info-section .reserve-button:hover {
+  background: white; }
 
 @import url("https://fonts.googleapis.com/css?family=Arimo:300|Raleway|Muli:300");
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
 .top-home-section {
   background: url("http://i.imgur.com/bpsHjNt.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -290,23 +375,21 @@ a {
 .main-header {
   width: 100%;
   height: 7vh;
-  background: #202426;
   display: flex;
   align-items: center;
   position: absolute;
+  justify-content: space-around;
   z-index: 21; }
   .main-header .logo-container {
     width: 80px;
     height: 15px;
-    float: left;
-    margin-left: 30px; }
+    padding: 5px 10px 5px 10px; }
     .main-header .logo-container .logo-image {
       width: 100%;
       height: 100%; }
   @media (max-width: 500px) {
     .main-header {
-      background: #202426;
-      position: relative; } }
+      background: #202426; } }
   .main-header .navbar-container {
     width: 400px;
     height: 100%;
@@ -401,19 +484,21 @@ a {
       width: 98%; } }
 
 .section-text-container {
-  width: 100%;
+  width: auto;
   height: auto;
-  margin-top: 60px; }
+  margin-top: 60px;
+  margin: auto; }
   @media (min-width: 1350px) {
     .section-text-container {
       margin-bottom: 150px; } }
 
 .section-text-large {
-  padding: 0 70px 0 70px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  color: white; }
+  font-weight: bold;
+  color: black;
+  background: rgba(255, 255, 255, 0.2); }
   @media (max-width: 600px) {
     .section-text-large {
       padding: 0; } }
@@ -465,7 +550,7 @@ a {
     color: black; }
 
 .section-center-button:hover {
-  background: white;
+  background: #d8d8d8;
   border: 1px solid white;
   transition: all 200ms ease; }
   .section-center-button:hover p {
@@ -481,12 +566,12 @@ a {
 .downwards-arrow-container {
   margin-top: 100px;
   width: 100%;
-  height: 30px;
+  height: 80px;
   display: flex;
   justify-content: space-around; }
-  .downwards-arrow-container i {
-    font-size: 35px;
-    color: white; }
+  .downwards-arrow-container img {
+    width: 80px;
+    height: 100%; }
 
 .mobile-menu-button {
   width: 40px;

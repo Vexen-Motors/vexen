@@ -10,7 +10,13 @@ angular.module('vexen', ['ui.router']).config(function($stateProvider, $urlRoute
       .state('about', {
         url: '/about',
         templateUrl: './views/about.html'
-      })
+      }),
+
+      $stateProvider
+        .state('car', {
+          url: '/car',
+          templateUrl: './views/car.html'
+        })
 
 
     $urlRouterProvider.otherwise('/')

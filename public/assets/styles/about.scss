@@ -13,7 +13,7 @@ $header-color: #383C3E;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top:-200px;
+  padding-top: -200px;
   position: flex;
   justify-content: space-around;
   align-items: center;
@@ -31,63 +31,12 @@ $header-color: #383C3E;
   }
 
   .section-text-container {
-    margin-bottom: -200px;
+    margin-bottom: -10px;
 
-  }
-}
-
-.about-grey-container {
-  width: 550px;
-  background: $header-color;
-  height: 60vh;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.about-inner-container {
-  // border: 1px solid black;
-  margin-top: 70px;
-  height: 500px;
-  // width: 300px;
-  // padding: 0;
-  display: flex;
-  justify-content: space-around;
-
-  @media(max-width: 900px){
-    height: 200vh;
-  }
-
-  .section-text-container {
-    // padding-top: 50px;
-    margin-top: 0;
-    // margin-bottom: -200px;
-    // width: 100%;
-  }
-
-  .section-text-large {
-    padding: 0;
-    ;
-  }
-
-  .about-carousel {
-    height: 220px;
-    width: 400px;
-    // border: 1px solid blue;
-    // margin: auto;
-    padding: 20px;
-    background: $base-color;
-  }
-
-  .about-carousel-cell {
-    width: 100%;
-    height: 100%;
-    // padding: 20px;
-
-
-    img {
-      width: 100%;
-      height: 100%;
+    .section-text-large {
+      margin-top: 0px;
+      // color: #d8d8d8;
+      color: black;
     }
   }
 }
@@ -115,8 +64,8 @@ $header-color: #383C3E;
 
   .break-div {
     width: 200px;
-    height: 25vh;
-    margin-top: -10vh;
+    height: 200px;
+    margin-top: -90px;
     // background: $header-color;
 
     background: url('http://i.imgur.com/bpsHjNt.jpg');
@@ -135,167 +84,174 @@ $header-color: #383C3E;
       margin-top: -50px;
       background: $main-color;
 
+      @media(max-width: 770px){
+        display: none;
+      }
 
     }
+
+    @media(max-width: 770px){
+      display: none;
+    }
   }
-}
 
   .about-inner-container {
-    width: 98%;
-    height: 96vh;
-    background: #F7F7F7;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    overflow: visible;
-    position: absolute;
-    margin-top: 2vh;
+    width: 100%;
+    height: 98%;
+    background: white;
+    margin-top: -55px;
 
-    @media(max-width: 900px){
-      height: auto;
-      padding-top: 100px;
+    .company-info-logo-container {
+      width: 100%;
+      height: 180px;
+      // background: black;
+      // margin-top: 5%;
+
+      .logo-container {
+        width: 180px;
+        height: 180px;
+        float: right;
+
+        @media(max-width: 770px){
+          float: none;
+          margin: auto;
+          margin-top: -10px;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
 
     .info-container {
-      width: 40%;
-      height: auto;
-      // border: 1px solid black;
+      width: 50%;
+      height: 500px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      flex-wrap: wrap;
+      margin-top: -10vh;
+      // align-items: center;
 
-
-      @media(max-width: 900px){
-        // margin-bottom: -200px;
-        width: 75%;
+      @media(max-width: 770px){
+        width: 90%;
+        margin-top: -5vh;
       }
-
-      @media(max-width: 1050px){
-
-        width: 50%;
-      }
-      @media(max-width: 600px){
-        width: 95%;
-      }
-    }
 
       .section-text-container {
+        width: 500px;
+        height: auto;
+        margin: auto;
 
         .section-text-medium {
-          background: none;
           color: black;
         }
 
         .section-text-small {
-
+          margin: 0;
         }
-      }
-
-    .info-car-image-container {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      justify-content: space-around;
-      align-content: center;
-      // border: 1px solid white;
-      // align-self: center;
-      // position: absolute;
-
-      @media(max-width: 900px){
-
-        width: 100%;
-      }
-
-      .car-model-image {
-        width: 100%;
-        height: 100%;
-        // margin-left: -100px;
-
-        @media(max-width: 900px){
-          margin-left: 0;
-          width: 500px;
-          height: 250px;
-        }
-
-        @media(max-width: 1050px){
-
-          width: 500px;
-          height: 250px;
-        }
-
-        @media(max-width: 500px){
-          width: 100%;
-        }
-
-        @media(min-width: 1350px){
-          height: 500px;
-        }
-
-
-
       }
     }
+
+    .about-image-container-right {
+      float: right;
+      width: 45%;
+      height: 300px;
+      // border: 1px solid black;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .about-image-container-left {
+      float: left;
+      width: 45%;
+      height: 300px;
+      // border: 1px solid black;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
 
-.car-and-price {
-  // border: 1px solid black;
-  height: 450px;
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
+.about-board-section {
 
-
-  @media(max-width: 1050px){
-
-    width: 50%;
-  }
-  @media(max-width: 900px){
-
+  .about-inner-container {
+    height: 98%;
     width: 100%;
+    background: $base-color;
+    margin-top: 1vh;
+
+    @media(max-width: 1100px){
+      height: 160%;
+    }
+
+    @media(max-width: 555px){
+      height: 300%;
+    }
+
+    .section-text-container {
+      margin-top: 50px;
+      margin-bottom: 100px;
+      border: none;
+      width: auto;
+      // margin-left: 50px;
+
+      .section-text-large {
+        width: auto;
+        margin-left: 90px;
+        color: white;
+        background: none;
+      }
+    }
+
+    .board-section {
+      width: 90%;
+      height: 350px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+
+      .board-card {
+        width: 250px;
+        height: 100%;
+        // border: 1px solid blue;
+        margin-bottom: 100px;
+
+        .board-image-container {
+          height: 60%;
+          width: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .section-text-container {
+          width: 100%;
+          height: 40%;
+          margin-top: 10px;
+
+          .section-text-medium {
+            margin-bottom: 10px;
+            // padding: 0
+          }
+
+          .section-text-small {
+
+          }
+        }
+      }
+    }
   }
-  @media(min-width: 1350px){
-    margin-top: -150px;
-    height: 770px;
-  }
-}
-
-
-.pricing-container {
-  width: 80%;
-  height: 40px;
-  // border: 1px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid black;
-
-  // @media(max-width: 1000px){
-  //   margin-top: -140px;
-  // }
-}
-
-.pricing-block {
-  // padding-top: 50px;
-  width: 33%;
-  height: 100%;
-  // text-align: center;
-  // background: $base-color;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
-  .section-text-medium {
-    background-color: none;
-    color: black;
-  }
-}
-
-.pricing-block:hover {
-  background: rgba(56, 60, 62, .8);
-  // border: 1px solid rgba(56, 60, 62, .8);
-  transition: all 200ms ease;
-}
-
-.pricing-block2 {
-  // border-right: 1px solid black;
-  // border-left: 1px solid black;
 }

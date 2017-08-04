@@ -12,37 +12,23 @@
 
   <a ui-sref='home'><div class='logo-container'>
 
-    <img class='logo-image' src='./assets/images/vexen-words-light.png' />
+    <img class='logo-image' src='./assets/images/vexen-words.png' />
 
   </div></a>
 
-  <div class='navbar-container'>
+  <!-- <div class='navbar-container'>
 
-    <div class='link-container'>
+    <img src='http://i.imgur.com/1EOTcQR.png' />
 
-      <a ui-sref='about'><p class='navbar-link'>About</p></a>
+  </div> -->
 
-    </div>
-
-    <div class='link-container'>
-
-      <a ui-sref=''><p class='navbar-link'>CNV</p></a>
-
-    </div>
-
-    <div class='link-container'>
-
-      <a ui-sref='media'><p class='navbar-link'>Media</p></a>
-
-    </div>
-
-  </div>
-
-  <div class='blog-link-container'>
+  <!-- <div class='blog-link-container'>
 
     <a><p class='blog-link'>Blog</p></a>
 
-  </div>
+  </div> -->
+
+
 
   <div class='navbar-container-2' ng-if='mobileMenu'>
 
@@ -74,14 +60,24 @@
 
 </section>
 
-<div class='mobile-menu-button' ng-click='mobileMenu = !mobileMenu'></div>
+<!-- <div class='mobile-menu-button' ng-click='mobileMenu = !mobileMenu'></div> -->
 
     <ui-view></ui-view>
 
     <!-- {{test}} -->
 
+    <!-- <script>
+    $(".section-center-button").click(function() {
+  $('html,body').animate({
+      scrollTop: $(".second").offset().top},
+      'slow');
+});
+    </script> -->
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
     <script src="https://use.fontawesome.com/c334b39ec1.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js'></script>
     <script src='./js/bundle.js'></script>
